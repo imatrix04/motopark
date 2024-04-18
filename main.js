@@ -6,6 +6,15 @@ async function fetchDataIfLoggedIn() {
     }
 }
 
+//redirection des buttons de la page principale
+document.getElementById('ajouter_moto').addEventListener('click', function (event) {
+    window.location.href = 'ajout_moto.html';
+});
+document.getElementById('recherche').addEventListener('click', function (event) {
+    window.location.href = 'recherche.html';
+});
+//fin des redirections
+
 // Appeler la fonction fetchDataIfLoggedIn lorsque le DOM est entièrement chargé
 document.addEventListener('DOMContentLoaded', fetchDataIfLoggedIn);
 
