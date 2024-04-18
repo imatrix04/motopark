@@ -1,87 +1,79 @@
-/*connexion/inscription*/
-.header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 10px;
+/* Styles généraux */
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url(images/body_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-body{
-    color: #FFFFFF;
-    
-}
-
-#container{
-    position: absolute;
-    top: 0; 
-    left: 0;
+header {
     width: 100%;
-    height: 100%;
-
-    background-image: url("Images/versus-screen-vs-battle-background-vector.jpg");
-    background-size: cover; /* Ajuster la taille de l'image pour remplir complètement la fenêtre du navigateur */
-    background-position: center; /* Positionner l'image au centre */
-    background-repeat: no-repeat; /* Empêcher la répétition de l'image */
+    background-color:rgba(62, 62, 62, 0.6);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-
-#loginBtn,
-#registerBtn {
-    margin-left: 10px;
+header img {
+    width: 4%;
+    height: 4%;
+    margin-left: 20px ;
 }
 
-.hidden {
-    display: none;
+header h1 {
+    margin: 0 auto; /* Centrage horizontal du titre */
+    width: fit-content; /* Ajuste la largeur du titre au contenu */
 }
 
-.buttonform {
-    position: absolute;
-    top : 0;
-    bottom: 1;
-    right: 0;
-    margin-top: 10px;
-    margin-right: 5px;
-    padding: 5px;
+header form {
+    margin-right: 20px;
 }
 
-#carte1{
-    text-align: left;
-    margin-top: 4.5%;
-    margin-left: 26.5%
+div {
+    text-align: center;
+    margin-top: 30px;
 }
 
-#carte2{
-    text-align: right;
-    margin-top: -39.8%;
-    margin-right: 26.25%
+h3 {
+    color: #333;
 }
 
-#image1{
-    float: left;
-    margin-top: -1.8%;
-    margin-left: 0;
-    border-radius: 10%;
-    height:800px;
-    width: 470px;
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-#image2{
-    float: right;
-    margin-top: -41.25%;
-    margin-left: 0;
-    border-radius: 10%;
-    height: 800px;
-    width: 470px;
+button:hover {
+    background-color: #0056b3;
 }
 
-.gradient-button{
-    background: linear-gradient(to left, #000060, #850606);
-    color: #FFFFFF;
-    border-color: linear-gradient(to right, #000060, #850606);
-    border-radius: 7%;
+/* Styles pour le responsive design */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
 
-}
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
 
-#button1{
-    margin-left: 48%; padding: 6px;
+    header form {
+        margin: 10px 0;
+    }
 }
